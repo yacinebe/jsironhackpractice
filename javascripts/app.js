@@ -7,6 +7,60 @@ rover.travelLog=[[0,0]];
 var x_boundary=10;
 var y_boundary=10;
 
+
+update();
+
+
+function update (time=0)
+
+{
+
+initializeGrid (10, 10);
+placeRover (rover);
+requestAnimationFrame (update);
+
+}
+
+
+function initializeGrid (numberOfRows, numberOfColumns)
+
+{
+  document.getElementById("main_grid").innerHTML="";
+
+    for (i=0; i<= (numberOfRows-1); i++)
+
+    {
+      for (j=0; j<=(numberOfColumns-1); j++)
+
+      {
+        var newCell=document.createElement ("div");
+        newCell.className="grid_cell";
+        newCell.id="x:"+j+"y:"+i;
+        
+
+
+        document.getElementById("main_grid").appendChild (newCell);
+             
+      }
+
+    }
+
+}
+
+function placeRover (rover)
+
+{
+
+  cellToPlaceRover = document.getElementById ("x:"+rover.x+"y:"+rover.y);
+  cellToPlaceRover.style.backgroundImage="url('../Ironhackexercise3/images/rover-icon-mars-" + rover.direction +".png";
+  cellToPlaceRover.style.backgroundSize="cover";
+ 
+
+}
+
+
+
+
 function turnLeft(rover){
 
   console.log("turnLeft was called!");
@@ -43,7 +97,7 @@ function turnRight(rover){
       break;
 
     case "E":
-      rover.direction="S";
+      rover.direction="N";
       break;
 
     case "S":
@@ -51,7 +105,7 @@ function turnRight(rover){
       break;
 
     case "W":
-      rover.direction="N";
+      rover.direction="S";
       break;
  
   }

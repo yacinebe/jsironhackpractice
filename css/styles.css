@@ -1,13 +1,13 @@
 .grid {
 
 display: grid;
-width: 50%;
-height: 300px;
+width: 600px;
+height: 600px;
 
-grid-template-columns: 50% 50%;
-grid-template-rows: 50% 50%;
-align-items: center;
-justify-items: center;
+grid-template-columns: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
+grid-template-rows: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
+column-gap: 5px;
+row-gap: 5px;
 
 }
 
@@ -16,7 +16,7 @@ justify-items: center;
 {
   
 border-style: solid;
-border-radius: 10px;
+
 border-color: lightgray;
 background-color: lightskyblue;
 width: 100%;
