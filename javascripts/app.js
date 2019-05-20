@@ -7,7 +7,6 @@ rover.travelLog=[[0,0]];
 var x_boundary=10;
 var y_boundary=10;
 
-
 function turnLeft(rover){
 
   console.log("turnLeft was called!");
