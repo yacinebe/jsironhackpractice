@@ -1,25 +1,111 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+#main_container
+
+{
+
+  display:flex;
+  justify-content: flex-start;
+}
+
 .grid {
+
 
 display: grid;
 width: 600px;
-height: 600px;
+height:600px;
 
-grid-template-columns: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
-grid-template-rows: 10% 10% 10% 10% 10% 10% 10% 10% 10% 10%;
+grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
 column-gap: 5px;
-row-gap: 5px;
-
+row-gap: 5px; 
 }
+
+
 
 .grid_cell
 
 {
   
-border-style: solid;
-
-border-color: lightgray;
+/*border-style: solid;
+border-color: lightgray; */
 background-color: lightskyblue;
 width: 100%;
 height: 100%;
 
+}
+
+#command_panel {
+
+  margin-left: 20px;
+  width: 400px;
+  height: 600px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  column-gap: 5px;
+row-gap: 5px; 
+  
+
+}
+
+.label
+
+{
+
+  grid-column-end: span 2;
+  background-color: gray;
+  align-items: center;
+  padding: 10px;
+  color: white;
+  font-size: 26px;
+  margin: 0px;
+  font-family: Poppins;
+  text-align: center;
+
+}
+
+.rover_image {
+
+  grid-column-end: span 2;
+  grid-row-end: span 2;
+  background-image:url("../images/rover-icon-mars-W.png");
+  background-size:cover;
+  font-weight: bold;
+  padding: 0px;
+
+}
+
+#black_rover
+
+{
+
+background-image:url("../images/rover-icon-mars-black-W.png");
+
+}
+
+#red_rover 
+
+{
+  background-image:url("../images/rover-icon-mars-red-W.png");
+
+}
+
+#green_rover {
+
+  background-image:url("../images/rover-icon-mars-green-W.png");
+}
+
+.big_picture {
+
+  grid-column-end: span 6;
+  grid-row-end: span 5;
+  background-image:url("../images/mars.jpg");
+  background-repeat: no-repeat;
+
+}
+
+#position {
+
+  text-align: left;
 }
