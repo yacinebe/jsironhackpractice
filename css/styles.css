@@ -109,3 +109,13 @@ background-image:url("../images/rover-icon-mars-black-W.png");
 
   text-align: left;
 }
+
+.bottom_container {
+
+  background-color: lightskyblue;
+  height: 200px;
+  width: 1020px;
+  margin-top: 20px;
+  display: flex;
+
+}
