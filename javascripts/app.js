@@ -174,7 +174,7 @@ function isObstacleOnTheWay(roverForwardCoordinateX, roverForwardCoordinateY) {
 
   });
 
-  console.log("collision is " + collision);
+ 
   if (collision > 0) { return true; } else { return false; }
 
 }
@@ -285,6 +285,7 @@ function command(commandString) {
     switch (commandString[stringCounter]) {
       case "f":
         moveForward(rover);
+        placeRover(rover);
         break;
       case "r":
         turnRight(rover);
