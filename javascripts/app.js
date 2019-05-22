@@ -111,7 +111,7 @@ function initializeGrid(numberOfRows, numberOfColumns) {
 function placeRover(rover) {
 
   cellToPlaceRover = document.getElementById("x:" + rover.x + "y:" + rover.y);
-  cellToPlaceRover.style.backgroundImage = "url('./images/rover-icon-mars-" + rover.color + "-" + rover.direction + ".png";
+  cellToPlaceRover.style.backgroundImage = "url('./images/rover-icon-mars-" + rover.color + "-" + rover.direction + ".png");
   cellToPlaceRover.style.backgroundSize = "cover";
 
   if ((rover.travelLog.length >= 2) && (!((rover.travelLog[rover.travelLog.length - 1][0] == rover.x) && (rover.travelLog[rover.travelLog.length - 1][1] == rover.y)))) {
